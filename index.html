@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document main</title>
-        <style>
-        body {
-            background-image: url(bats.webp);
-                }
-        </style>
-        <style>
-        p {
-            color: navy;
-            text-indent: 30px;
-            text-transform: uppercase
-        }
-        </style>
-    </head>
-    <body>
-        <h1 style="color:Tomato; text-align: center;">Dracula Stories</h1>
-        <p>Marketed outside Romania as Dracula's Castle, it is presented as the home of the title character in Bram Stoker's novel Dracula (1897). There is no evidence that Stoker knew anything about this castle, which has only tangential associations with Vlad the Impaler, voivode of Wallachia, whose byname 'Drăculea' resembles that of Dracula. Stoker's description of Dracula's crumbling fictional castle also bears no resemblance to Bran Castle.</p>
 
-        <hr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document main</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <p>In 1530, Moise of Wallachia, Voivode of Wallachia, sent an army to capture the castle, but the Székely soldiers led by the castle lord Dénes defended the building, thereby forcing the Wallachian army to retreat.</p>
-        <h2>This is heading 2</h2>
-        <h3>Share with us your E-Mail</h3>
-        <form action="https://httpbin.org/post"
-            method="post">
-            <label for="email">Enter your E-Mail:</label>
+<body>
+    <main>
+        <header>
+            <p>Anna Li</p>
+            <nav class="navigation">
+                <a href="index.html" class="navigation-link">Home</a>
+                <a href="#about" class="navigation-link">About</a>
+                <a href="#portfolio" class="navigation-link">Portfolio</a>
+                <a href="#pricing" class="navigation-link">Pricing</a>
+                <a href="#contact" class="navigation-link">Contact</a>
+            </nav>
+        </header>
+        <section>
+            <h1>Ти — не зовнішність. Ти — відчуття.</h1>
+            <p>Простір, щоб бути собою, відчути жіночність і насолодитися миттю.</p>
+            <a href="https://web.dev/learn/html">Записатись на зйомку</a>
+        </section>
+    </main>
+    <section id="about">
+        <img src="ny_city_girl.jpeg" alt="Fancy NY girl">
+        <article>
+            <h2>ДЛЯ КОГО ЦЕЙ ПРОЄКТ</h2>
+            <p>Ця зйомка для жінок, які втомились грати роль, хочуть відчути свою жіночність і готові повністю прийняти
+                себе.</p>
+            <p>Годинна спокійна зйомка з м’якими підказками — без тиску позувати, просто бути присутньою. Можна бути
+                серйозною, емоційною, тихою або грайливою. Все, що ти відчуваєш — правильне.</p>
+        </article>
+        <img src="french_girl.avif" alt="Fancy French girl">
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <article>
+            <img src="polaroid_girl.png" alt="Polaroid girl">
+            <img src="bright_scarf_girl.jpg" alt="Bright scarf girl">
+            <img src="red_pants_girl.jpg" alt="Red pants girl">
+            <img src="blue_jeans_girl.avif" alt="Blue jeans girl">
+        </article>
+    </section>
+    <section>
+        <h2>Записатись на зйомку</h2>
+        <form action="#" method="post">
+            <label for="name">Імя: *</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="nikName">Нік в телеграм: *</label>
+            <input type="text" id="nikName" name="nikName" required><br><br>
+
+            <label for="email">Емейл:</label>
             <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="Submit">
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="types">Тип зйомки:</label>
+            <select name="types" id="types" name="types">
+                <option value="individual">Індивідуальна</option>
+                <option value="group">Групова</option>
+                <option value="couple">Парна</option>
+                <option value="family">Сімейна</option>
+            </select><br><br>
+
+            <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Ваші побажання до зйомки"></textarea><br><br>
+
+            <input type="submit" value="Записатись">
         </form>
-        <h4>This is heading 4</h4>
-        <h5>This is heading 5</h5>
-        <h6>This is heading 6</h6>
-        <a href="https://en.wikipedia.org/wiki/Bran_Castle">
-            <img src="castle.png" alt="A castle">
-        </a>
-        <p>Bran<br> 24, Gen. Traian Moșoiu St.<br> Romania<br></p>
-        <a href="https://www.google.com" target="_blank">This is a link</a>
-    </body>
+    </section>
+</body>
+
 </html>

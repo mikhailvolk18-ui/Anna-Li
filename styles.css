@@ -1,0 +1,17 @@
+p {
+  color: green;
+}
+
+
+h1
+{
+    color: yellow;
+}
+.navigation {
+    background-color: rgba(1, 1, 1, 0.5);
+}
+.navigation-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
