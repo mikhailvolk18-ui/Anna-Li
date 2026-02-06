@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document main</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -28,43 +29,43 @@
             <a href="https://web.dev/learn/html" class="hero__button">Записатись на зйомку</a>
         </section>
     </main>
-    <section id="about">
-        <img src="ny_city_girl.jpeg" alt="Fancy NY girl">
-        <article>
-            <h2>ДЛЯ КОГО ЦЕЙ ПРОЄКТ</h2>
-            <p>Ця зйомка для жінок, які втомились грати роль, хочуть відчути свою жіночність і готові повністю прийняти
+    <section id="about" class="about content">
+        <img src="pics/nice_face.jpg" alt="Nice face" class="about__image about__image--left">
+        <article class="about__content">
+            <h2 class="about__title about__title--right">ДЛЯ КОГО ЦЕЙ ПРОЄКТ</h2>
+            <p class="about__text">Ця зйомка для жінок, які втомились грати роль, хочуть відчути свою жіночність і готові повністю прийняти
                 себе.</p>
-            <p>Годинна спокійна зйомка з м’якими підказками — без тиску позувати, просто бути присутньою. Можна бути
+            <p class="about__text">Годинна спокійна зйомка з м’якими підказками — без тиску позувати, просто бути присутньою. Можна бути
                 серйозною, емоційною, тихою або грайливою. Все, що ти відчуваєш — правильне.</p>
         </article>
-        <img src="french_girl.avif" alt="Fancy French girl">
+        <img src="pics/lingerie_girl.jpg" alt="Lingerie girl" class="about__image about__image--right">
     </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
+    <section id="portfolio" class="portfolio content">
+        <h2 class="portfolio__title">Portfolio</h2>
         <article>
-            <img src="polaroid_girl.png" alt="Polaroid girl">
-            <img src="bright_scarf_girl.jpg" alt="Bright scarf girl">
-            <img src="red_pants_girl.jpg" alt="Red pants girl">
-            <img src="blue_jeans_girl.avif" alt="Blue jeans girl">
+            <img src="pics/polaroid_girl.png" alt="Polaroid girl">
+            <img src="pics/bright_scarf_girl.jpg" alt="Bright scarf girl">
+            <img src="pics/red_pants_girl.jpg" alt="Red pants girl">
+            <img src="pics/blue_jeans_girl.avif" alt="Blue jeans girl">
         </article>
     </section>
-    <section>
-        <h2>Записатись на зйомку</h2>
-        <form action="#" method="post">
-            <label for="name">Імя: *</label>
+    <section class="booking content">
+        <h2 class="booking__title">Записатись на зйомку</h2>
+        <form action="#" method="post" class="booking__form">
+            <label for="name" class="booking__label">Імя: *</label>
             <input type="text" id="name" name="name" required><br><br>
 
-            <label for="nikName">Нік в телеграм: *</label>
+            <label for="nikName" class="booking__label">Нік в телеграм: *</label>
             <input type="text" id="nikName" name="nikName" required><br><br>
 
-            <label for="email">Емейл:</label>
+            <label for="email" class="booking__label">Емейл:</label>
             <input type="email" id="email" name="email"><br><br>
 
-            <label for="phone">Телефон:</label>
+            <label for="phone" class="booking__label">Телефон:</label>
             <input type="tel" id="phone" name="phone"><br><br>
 
-            <label for="types">Тип зйомки:</label>
-            <select name="types" id="types" name="types">
+            <label for="types" class="booking__label">Тип зйомки:</label>
+            <select name="types" id="types" name="types" class="booking__select">
                 <option value="individual">Індивідуальна</option>
                 <option value="group">Групова</option>
                 <option value="couple">Парна</option>
