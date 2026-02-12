@@ -24,9 +24,11 @@
             </nav>
         </header>
         <section>
-            <h1 class="hero__title">Ти — не зовнішність. Ти — відчуття.</h1>
-            <p class="hero__subtitle">Простір, щоб бути собою, відчути жіночність і насолодитися миттю.</p>
-            <a href="https://web.dev/learn/html" class="hero__button">Записатись на зйомку</a>
+            <div class="hero__container">
+                <h1 class="hero__title">Ти — не зовнішність. Ти — відчуття.</h1>
+                <p class="hero__subtitle">Простір, щоб бути собою, відчути жіночність і насолодитися миттю.</p>
+                <a href="https://web.dev/learn/html" class="hero__button">Записатись на зйомку</a>
+            </div>
         </section>
     </main>
     <section id="about" class="about content">
@@ -50,38 +52,59 @@
                 <a class="portfolio__item"><img src="pics/blue_jeans_girl.avif" alt="Blue jeans girl"></a>
                 <a class="portfolio__item"><img src="pics/side-looking-girl.jpg" alt="Side looking girl"></a>
                 <a class="portfolio__item"><img src="pics/summer-jeans-girl.jpg" alt="Summer jeans girl"></a>
-                <a class="portfolio__item portfolio__item--big"><img src="pics/underground_girl.jpg" alt="Underground girl"></a>
+                <a class="portfolio__item"><img src="pics/underground_girl.jpg" alt="Underground girl"></a>
             </article>
         </div>
     </section>
     <section class="booking content">
-        <h2 class="booking__title">Записатись на зйомку</h2>
-        <form action="#" method="post" class="booking__form">
-            <label for="name" class="booking__label">Імя: *</label>
-            <input type="text" id="name" name="name" required><br><br>
+        <div class="booking__form--wrapper">
+            <h2 class="booking__title">Записатись на зйомку</h2>
+            <form action="#" method="post" class="booking__form">
+                <label for="name" class="booking__label">Імя: *</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="nikName" class="booking__label">Нік в телеграм: *</label>
-            <input type="text" id="nikName" name="nikName" required><br><br>
+                <label for="nikName" class="booking__label">Нік в телеграм: *</label>
+                <input type="text" id="nikName" name="nikName" required>
 
-            <label for="email" class="booking__label">Емейл:</label>
-            <input type="email" id="email" name="email"><br><br>
+                <label for="email" class="booking__label">Емейл:</label>
+                <input type="email" id="email" name="email">
 
-            <label for="phone" class="booking__label">Телефон:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
+                <label for="phone" class="booking__label">Телефон:</label>
+                <input type="tel" id="phone" name="phone">
 
-            <label for="types" class="booking__label">Тип зйомки:</label>
-            <select name="types" id="types" name="types" class="booking__select">
-                <option value="individual">Індивідуальна</option>
-                <option value="group">Групова</option>
-                <option value="couple">Парна</option>
-                <option value="family">Сімейна</option>
-            </select><br><br>
+                <label for="types" class="booking__label">Тип зйомки:</label>
+                <select id="types" name="types" class="booking__select">
+                    <option value="individual">Індивідуальна</option>
+                    <option value="group">Групова</option>
+                    <option value="couple">Парна</option>
+                    <option value="family">Сімейна</option>
+                </select>
 
-            <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Ваші побажання до зйомки"></textarea><br><br>
+                <textarea id="suggestions" name="suggestions" rows="4" cols="50" placeholder="Ваші побажання до зйомки"></textarea>
 
-            <input type="submit" value="Записатись">
-        </form>
+                <input type="submit" value="Записатись">
+            </form>
+        </div>
     </section>
+    <footer class="footer content">
+        <div class="footer__container">
+            <div class="footer__column footer__column--contact">
+                <h3 class="footer__title">Контакти</h3>
+                <ul class="footer__socials">
+                    <li><a href="#" class="footer__social-link">LinkedIn</a></li>
+                    <li><a href="#" class="footer__social-link">Facebook</a></li>
+                    <li><a href="#" class="footer__social-link">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer__column footer__column--subscribe">
+                <h3 class="footer__title">Підписка на щотижневу розсилку</h3>
+                <form action="#" method="post" class="footer__form">
+                    <input type="email" class="footer__input" placeholder="Введіть ваш емейл" required>
+                    <button type="submit" class="footer__button">Підписатися</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
